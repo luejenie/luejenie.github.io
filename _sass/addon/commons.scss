@@ -702,7 +702,16 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  background: var(--sidebar-bg);
+  // background: var(--sidebar-bg);
+  background-image: url(/assets/img/images/tran.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position-x: -36px;
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-color: rgba(200,200,200, 0.8);
+  background-blend-mode: revert;
+  // background-size: 80%;
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
@@ -723,13 +732,14 @@ $sidebar-display: "sidebar-display";
     }
   }
 
+
   #avatar {
     > a {
       display: block;
       width: 6rem;
       height: 6rem;
-      border-radius: 50%;
-      border: 2px solid rgba(222, 222, 222, 0.7);
+      // border-radius: 50%;
+      // border: 2px solid rgba(222, 222, 222, 0.7);
       overflow: hidden;
       -webkit-transform: translateZ(0);
       transform: translateZ(0); /* fixed the zoom in Safari */
@@ -762,14 +772,15 @@ $sidebar-display: "sidebar-display";
 
       font-weight: 900;
       font-size: 1.5rem;
-      letter-spacing: 0.5px;
-      color: rgba(134, 133, 133, 0.99);
+      // color: rgba(134, 133, 133, 0.99);
+      color: darkslategray;
     }
   }
 
   .site-subtitle {
     font-size: 95%;
-    color: var(--sidebar-muted-color);
+    // color: var(--sidebar-muted-color);
+    color: darkslategray;
     line-height: 1.25rem;
     word-spacing: 1px;
     margin: 0.2rem 1.5rem 0.5rem 1.5rem;

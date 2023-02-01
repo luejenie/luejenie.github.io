@@ -24,7 +24,8 @@
     <div class="site-title">
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
-    <div class="site-subtitle font-italic">{{ site.tagline }}</div>
+    <!-- <div class="site-subtitle font-italic">{{ site.tagline }}</div> -->
+    <div class="site-subtitle">{{ site.tagline }}</div>
 
   </div><!-- .profile-wrapper -->
 
@@ -67,8 +68,8 @@
       {% capture url %}
         {%- if entry.type == 'github' -%}
           https://github.com/{{ site.github.username }}
-        {%- elsif entry.type == 'twitter' -%}
-          https://twitter.com/{{ site.twitter.username }}
+        <!-- {%- elsif entry.type == 'twitter' -%}
+          https://twitter.com/{{ site.twitter.username }} -->
         {%- elsif entry.type == 'email' -%}
           {% assign email = site.social.email | split: '@' %}
           javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
