@@ -703,13 +703,11 @@ $sidebar-display: "sidebar-display";
   width: $sidebar-width;
   z-index: 99;
   // background: var(--sidebar-bg);
-  background-image: url(/assets/img/images/tran.jpg);
+  background-image: url(/assets/img/images/tranFlower.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-position-x: -36px;
-  background-repeat: no-repeat;
-  background-size: 250%;
-  background-color: rgba(200,200,200, 0.8);
+  background-position-x: -86px;
+  background-size: 200%;
   background-blend-mode: revert;
   // background-size: 80%;
 
