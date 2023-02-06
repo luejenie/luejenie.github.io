@@ -1,0 +1,21 @@
+---
+layout: post
+title:  블로그 첫 글
+date: 2023-02-06 18:40:00 +0900
+categories: [Blogging, myblog]
+---
+
+### 마크다운 언어 정리
+테마 원작자가 친절하게 정리해주심.
+추가 내용만 덧붙여서 넣어놓음.
+글쓸 때 아주 유용 :)\
+[Text and Typography](http://127.0.0.1:4000/posts/text-and-typography(%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%8D%A8%EB%B3%B4%EA%B8%B0)/)
+
+
+##### 블로그 미리 보기
+* Git Bash 이용 / Ruby 이용
+* 블로그 경로로 이동 cd C:\\Java\\luejenie.github.io (윈도우는 역슬래시 2번, 루비는 1번)
+* $ bundle exec jekyll serve
+* http://127.0.0.1:4000
+
+

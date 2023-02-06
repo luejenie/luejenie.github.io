@@ -1,0 +1,49 @@
+---
+layout: post
+title: String 대소문자 변환
+date: 2023-02-06 19:15:00 +0900
+categories: [코딩테스트, 간단이론(Java)]
+tags: [Java]
+---
+
+ static\
+ non-static, instance method → 객체 생성 필요
+
+
+---
+## String
+### **toUpperCase(), toLowerCase()**
+* toUpperCase() : 대문자로 바꾸기
+```
+String str = "string";
+str = str.toUpperCase();  // STRING
+```
+
+* toLowerCase : 소문자로 바꾸기
+```
+String str = "STRING";
+str = str.toLowerCase();  // string
+```
+
+<br>
+
+<!-- Char
+### **isUpperCase(), isLowerCase()**
+* Character.isUpperCase() : 대문자인가?
+```
+if(Character.isUpperCase)
+
+``` -->
+
+
+
+* length
+  * String.length()
+  * Array.length
+
+
+
+
+
+
+
