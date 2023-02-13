@@ -27,13 +27,13 @@ description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'luejenie.github.io'
+url: 'https://luejenie.github.io'
 
 github:
   username: luejenie             # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: luejenie           # change to your twitter username
 
 social:
   # Change to your full name.
