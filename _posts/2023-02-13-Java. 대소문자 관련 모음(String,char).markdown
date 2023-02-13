@@ -1,0 +1,154 @@
+---
+layout: post
+title: Java. 대소문자 관련 모음(String,char)
+date: 2023-02-13 15:57:00 +0900
+categories: [코딩테스트, 간단이론(Java)]
+tags: [Java]
+---
+ <!-- static\
+ non-static, instance method → 객체 생성 필요 -->
+
+
+> [대소문자 변환]
+\
+> **String** | *s*.toUpperCase(), *s*.toLowerCase()
+\
+> **char** | Character.toUpperCase(*c*), Character.toLowerCase(*c*)
+
+> [대소문자 비교]
+\
+> **String** | *s1*.equals(*s2*), *s1*.equalsIgnoreCase(*s2*)
+
+> [대소문자 확인]
+\
+> **char** | Character.isUpperCase(*c*), Character.isLoserCase(*c*)
+
+> [알파벳, 숫자 여부 확인]
+\
+> **char** | Character.isAlphabetic(*c*), Character.isDigit(*c*)
+
+<br>
+
+<!-- todo: 대소문자 변환-->
+## **[대소문자 변환]**
+## 1. String 대소문자 변환
+---
+### **toUpperCase()**
+* .toUpperCase() : String 대문자로 바꾸기
+
+```java
+  String str = "string";
+  str = str.toUpperCase();  // STRING
+```
+{: file='Java'}
+
+### **toLowerCase()**
+* .toLowerCase : String 소문자로 바꾸기
+```java
+  String str = "STRING";
+  str = str.toLowerCase();  // string
+```
+{: file='Java'}
+
+<br>
+
+
+## 2. char 대소문자 변환
+---
+### **Character.tsUpperCase(*문자*)**
+* Character.toUpperCase(*문자*) : char형 *문자*를 대문자로 바꾸기
+```java
+  char ch = 'a';
+  ch = Character.toUpperCase(ch); // A
+```
+{: file='Java'}
+
+### **Character.toLowerCase(*문자*)**
+* Character.toLowerCase(*문자*) : char형 *문자*를 소문자로 바꾸기
+```java
+  char ch = 'A';
+  ch = Character.toLowerCase(ch); // a
+```
+{: file='Java'}
+
+<br>
+
+<!-- todo: 대소문자 비교(String)-->
+
+## **[대소문자 비교]**
+## 3. String 대소문자 비교
+---
+### **equals()**
+* *string1*.equals(*string2*) : 대소문자 구분해서 String 비교
+```java
+  String str1 = "STRING";
+  String str2 = "string";
+  boolean check = str1.equals(str2);
+  System.out.println(check); // false
+```
+{: file='Java'}
+
+### **equalsIgnoreCase()**
+* *string1*.equalsIgnoreCase(*string2*) : 대소문자 구분하지 <u>않고</u> String 비교
+```java
+  String str1 = "STRING";
+  String str2 = "string";
+  boolean check = str1.equalsIgnoreCase(str2);
+  System.out.println(check); // true
+```
+{: file='Java'}
+
+<br>
+
+
+<!-- todo: 대소문자 확인(char)-->
+
+## **[대소문자 확인]**
+## 4. char 대소문자 확인
+---
+### **Character.isUpperCase(*문자*)**
+* Character.isUpperCase(*문자*) : char형 *문자*가 대문자인지 확인
+```java
+  char ch = 'A';
+  boolean check = Character.isUpperCase(ch);
+  System.out.println(check); // true
+```
+{: file='Java'}
+
+### **Character.isLowerCase(*문자*)**
+* Character.isLowerCase(*문자*) : char형 *문자*가 소문자인지 확인
+```java
+  char ch = 'a';
+  boolean check = Character.isLowerCase(ch);
+  System.out.println(check); // true
+```
+{: file='Java'}
+
+<br>
+## **[+]**
+<blockquote style='font-size: 1rem'>
+<b style='font-size: 1.2rem'>Character 클래스</b> <br>
+기본 데이터 타입의 값을 객체 형식으로 표현하기 위해 사용<br>
+즉, char의 값을 객체로 포장한다.(wrapper class)<br>
+→ Vector, ArrayList와 같은 컬렉션 객체에 char 타입의 값을 저장할 수 있다.<br>
+* Character 클래스는 문자 형태와 관련하여 여러 메서드를 제공한다.
+</blockquote>
+
+
+
+## 5. Character 클래스의 다른 메서드 
+---
+* **Character.isAlphabetic(*char*)** : *char*가 알파벳인지 확인
+* **Character.isDigit(*char*)** : *char*가 숫자인지 확인 
+
+
+<!-- * length
+  * String.length()
+  * Array.length -->
+
+
+
+
+
+
+
