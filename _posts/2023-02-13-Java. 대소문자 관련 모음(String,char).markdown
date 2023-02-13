@@ -43,7 +43,7 @@ tags: [Java]
 {: file='Java'}
 
 ### **toLowerCase()**
-* .toLowerCase : String 소문자로 바꾸기
+* .toLowerCase() : String 소문자로 바꾸기
 ```java
   String str = "STRING";
   str = str.toLowerCase();  // string
