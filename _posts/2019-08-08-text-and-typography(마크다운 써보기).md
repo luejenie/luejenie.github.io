@@ -211,7 +211,7 @@ Here is the `/path/to/the/file.extend`{: .filepath}.
 
 ---
 
-## **Inline code**
+## **Inline code (인라인코드)**
 - `` 사이에 쓰기
 - \`inline Code`
 
@@ -219,7 +219,7 @@ This is an example of `Inline Code`.
 
 ---
 
-## **Code blocks**
+## **Code blocks (코드블럭)**
 <!-- 
 나는 안됨..
 스페이스바 4번으로도 가능 (들여쓰기한 부분에 코드블록이 적용) -->
@@ -279,7 +279,7 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
   cherry :active, c, after b a, 1d
 ```
 
-## **이미지 Images**
+## **Images (이미지)**
 - \[이미지제목](이미지주소){: width: "가로사이즈" height:"세로사이즈" .정렬}
 - 정렬 안 적어도 무방
 - **.normal** : 일반적인 정렬(왼쪽기준)  
@@ -307,8 +307,8 @@ Praesent maximus aliquam sapien. Sed vel neque in dolor pulvinar auctor. Maecena
 
 ---
 
-### **그림자 Dark/Light mode & Shadow**
-- \[이미지이름](이미지주소){: .light .shadow}
+### **Dark/Light mode & Shadow(다크모드/라이트모드 & 그림자)**
+- \[이미지이름](이미지주소){: .light(or dark) .shadow}
 - .light: 라이트모드 / .dark: 다크모드
 - .shadow : 그림자
 - (참고) .rounded-숫자 : 사진 모서리를 '숫자'만큼 둥글게 .rounded-10
@@ -318,8 +318,8 @@ The image below will toggle dark/light mode based on theme preference, notice it
 ![light mode only](pencils.jpg){: .light .w-75 .shadow .rounded-10 w='1212' h='668' }
 ![dark mode only](pencils.jpg){: .dark .w-75 .shadow .rounded-10 w='1212' h='668' }
 
-## **동영상 Video**
-\{% include embed/youtube.html id='Balreaj8Yqs' %}
+## **Video (동영상)**
+\{% include embed/youtube.html id='     ' %}
 
 {% include embed/youtube.html id='Balreaj8Yqs' %}
 
