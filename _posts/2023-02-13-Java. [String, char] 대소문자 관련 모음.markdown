@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Java. 대소문자 관련 모음(String,char)
+title: Java. [String, char] 대소문자 관련 모음
 date: 2023-02-13 15:57:00 +0900
 categories: [코딩테스트, 간단이론(Java)]
-tags: [Java]
+tags: [Java, 간단이론, 코딩테스트]
 ---
  <!-- static\
  non-static, instance method → 객체 생성 필요 -->
@@ -33,8 +33,8 @@ tags: [Java]
 ## **[대소문자 변환]**
 ## 1. String 대소문자 변환
 ---
-### **toUpperCase()**
-* .toUpperCase() : String 대문자로 바꾸기
+### **.toUpperCase()**
+* *string*.toUpperCase() : String 대문자로 바꾸기
 
 ```java
   String str = "string";
@@ -42,8 +42,9 @@ tags: [Java]
 ```
 {: file='Java'}
 
-### **toLowerCase()**
-* .toLowerCase() : String 소문자로 바꾸기
+### **.toLowerCase()**
+* *string*.toLowerCase() : String 소문자로 바꾸기
+
 ```java
   String str = "STRING";
   str = str.toLowerCase();  // string
@@ -57,6 +58,7 @@ tags: [Java]
 ---
 ### **Character.tsUpperCase(*문자*)**
 * Character.toUpperCase(*문자*) : char형 *문자*를 대문자로 바꾸기
+
 ```java
   char ch = 'a';
   ch = Character.toUpperCase(ch); // A
@@ -65,6 +67,7 @@ tags: [Java]
 
 ### **Character.toLowerCase(*문자*)**
 * Character.toLowerCase(*문자*) : char형 *문자*를 소문자로 바꾸기
+
 ```java
   char ch = 'A';
   ch = Character.toLowerCase(ch); // a
@@ -78,8 +81,12 @@ tags: [Java]
 ## **[대소문자 비교]**
 ## 3. String 대소문자 비교
 ---
-### **equals()**
+
+> boolean 타입으로 반환 (true, false)
+
+### **.equals()**
 * *string1*.equals(*string2*) : 대소문자 구분해서 String 비교
+
 ```java
   String str1 = "STRING";
   String str2 = "string";
@@ -88,8 +95,9 @@ tags: [Java]
 ```
 {: file='Java'}
 
-### **equalsIgnoreCase()**
+### **.equalsIgnoreCase()**
 * *string1*.equalsIgnoreCase(*string2*) : 대소문자 구분하지 <u>않고</u> String 비교
+
 ```java
   String str1 = "STRING";
   String str2 = "string";
@@ -106,8 +114,12 @@ tags: [Java]
 ## **[대소문자 확인]**
 ## 4. char 대소문자 확인
 ---
+
+> boolean 타입으로 반환 (true, false)
+
 ### **Character.isUpperCase(*문자*)**
 * Character.isUpperCase(*문자*) : char형 *문자*가 대문자인지 확인
+
 ```java
   char ch = 'A';
   boolean check = Character.isUpperCase(ch);
@@ -117,12 +129,34 @@ tags: [Java]
 
 ### **Character.isLowerCase(*문자*)**
 * Character.isLowerCase(*문자*) : char형 *문자*가 소문자인지 확인
+
 ```java
   char ch = 'a';
   boolean check = Character.isLowerCase(ch);
   System.out.println(check); // true
 ```
 {: file='Java'}
+
+### **아스키코드(ASCII) 사용하기**
+* 영어 대문자 65~90
+* 영어 소문자 97~122
+> 대문자 'A' : 65
+\
+> 소문자 'a' : 97
+\
+> 알파벳 개수는 총 26개
+\
+> 대문자와 소문자의 차이는 32
+
+```java
+  char ch = 'a';
+  boolean check = 97<=ch && ch<=122;
+  System.out.println(check); // true
+```
+{: file='Java'}
+
+
+
 
 <br>
 ## **[+]**
@@ -138,8 +172,9 @@ tags: [Java]
 
 ## 5. Character 클래스의 다른 메서드 
 ---
-* **Character.isAlphabetic(*char*)** : *char*가 알파벳인지 확인
 * **Character.isDigit(*char*)** : *char*가 숫자인지 확인 
+* **Character.isAlphabetic(*char*)** : *char*가 알파벳인지 확인
+* !Character.isAlphabetic(*char*) : 알파벳이 아님 == 특수문자인지 확인할 수 있다.
 
 
 <!-- * length
