@@ -6,25 +6,29 @@ categories: [코딩테스트, 간단이론(Java)]
 tags: [Java, 간단이론, 코딩테스트]
 ---
 
-> [문자 추출]
+> [문자 추출] 
 \
 > .charAt(int index)
 
-> [문자의 위치 추출]
+> [문자의 위치 추출] 
 \
 > .indexOf(String str)
 
-> [문자열 자르기]
+> [문자열 자르기] 
 \
 > .substring(int index1, int index2)
 
-> [문자열 → 문자배열]
+> [문자열 → 문자 배열] 
 \
 > .toCharArray()
 
 > [문자열로 변환]
 \
 > String.valueOf(값)
+
+> [문자열 → 문자열 배열] 
+\
+> split()
 
 <br>
 
@@ -146,6 +150,20 @@ char input = **sc.next().charAt(0);** 이렇게 표현<br>
   System.out.println(Arrays.toString(arr)); // [Hello, World]
 ```
 {: file='Java'}
+
+
+<span style='font-size: 1rem; color: #555;'>
+""을 이용하면 문자열 하나를 문자 단위의 String[]을 만들 수 있다.
+</span>
+
+```java
+  String str = "Hello";
+  String[] arr = str.split(""); 
+  System.out.println(Arrays.toString(arr)); // [H, e, l, l, o]
+```
+{: file='Java'}
+
+<br>
 
 * 배열로 저장되었기 때문에 배열 인덱스를 이용하여 각각의 값을 가져올 수 있다.
 
