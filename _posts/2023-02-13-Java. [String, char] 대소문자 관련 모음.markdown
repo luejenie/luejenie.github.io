@@ -4,6 +4,7 @@ title: Java. [String, char] 대소문자 관련 모음
 date: 2023-02-13 15:57:00 +0900
 categories: [코딩테스트, 간단이론(Java)]
 tags: [Java, 간단이론, 코딩테스트]
+pin: true
 ---
  <!-- static\
  non-static, instance method → 객체 생성 필요 -->
