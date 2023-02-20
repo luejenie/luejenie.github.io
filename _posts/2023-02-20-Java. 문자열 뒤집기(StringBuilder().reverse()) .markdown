@@ -1,0 +1,66 @@
+---
+layout: post
+title: Java. 문자열 뒤집기(StringBuilder().reverse())
+date: 2023-02-20 22:48:00 +0900
+categories: [코딩테스트, 간단이론(Java)]
+tags: [Java, 간단이론, 코딩테스트]
+pin: true
+---
+
+> StringBuilder 클래스 
+
+> StringBuilder().reverse()
+
+
+
+
+
+<br>
+
+<!-- todo: *string*.charAt(int index) : 특정 위치 문자 리턴 -->
+## StringBuilder 클래스
+---
+### **StringBuilder 클래스**
+* String은 내부 데이터를 수정할 수 없다. 수정하는 것이 아니라 수정한 데이터가 담긴 새로운 String 객체가 만들어지는 것. 
+문자열 변경 작업이 많아질 수록 String 객체 수가 늘어나고, 결국 성능이 저하된다. <br>
+이때 StringBuilder 클래스를 사용
+
+* StringBuilder 클래스는 내부 버퍼(buffer: 데이터를 임시로 저장하는 메모리)에 문자열을 저장해 두고<br>
+그 안에서 추가, 수정, 삭제 작업 등을 할 수 있게 한다. (append, insert, delete, replace 등) <br>
+
+### **생성자**
+* 기본 생성자 **StringBuilder()** : 16개의 문자를 저장할 수 있는 초기 버퍼를 생성
+* **StringBuilder(int capacity)** 생성자 : capacity 개수 만큼의 문자를 저장할 수 있는 초기 버퍼를 생성
+* **StringBuilder(String str)** 생성자 : str로 주어진 매개값을 버퍼의 초기값으로 저장
+* StringBuilder는 버퍼가 부족할 경우 자동으로 버퍼 크기를 늘리기 때문에 초기 버퍼의 크기는 그다지 중요하지 않음.
+
+
+### **문자열 뒤집기 reverse()**
+```java
+...
+  String str = "Hello World";
+  String sb = new StringBuilder(str).reverse().toString();
+  System.out.println(sb); // dlroW olleH
+...
+```
+{: file='Java'}
+
+<ul style='font-size: 0.9rem; color: black'>
+* <b>toString()메서드 : 객체를 문자열로 표현할 때 사용</b> <br>
+* Object 클래스의 toString() 메서드는 '클래스명@16진수해시코드'로 구성된 문자 정보를 리턴 <br>
+* Object 하위 클래스는 toString() 메서드를 재정의(오버라이딩)하여 사용
+</ul> 
+
+<br>
+
+## [-]
+회문문자열 문제를 풀다가 정리하는 내용.\
+회문문자열(팰린드롬, palindrome) : 앞에서 읽으나, 뒤에서 읽으나 같은 문자열
+
+
+<br>
+
+<span style='font-size: 0.95rem; color: #777;'>
+**[참고자료]** <br>
+도서 <이것이 자바다 1>, 신용권, 한빛미디어
+</span> 
