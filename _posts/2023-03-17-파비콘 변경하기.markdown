@@ -1,0 +1,72 @@
+---
+layout: post
+title: 파비콘 변경하기
+date: 2023-03-17 15:33:00 +0900
+categories: [Blogging, myblog]
+tags: [깃허브 블로그(Github Blog), 파비콘]
+pin: true
+---
+
+**깃허브 블로그 파비콘 변경하기**
+
+<div style='font-size: 0.95rem;'>
+지킬 테마를 받아서 깃허브 블로그를 사용하고 있다. <br>
+테마 내부를 하나씩 보면서 필요한 건 남겨두고, 필요하지 않은 건 없애면서 블로그를 나름대로 꾸미고 있다. <br>
+좌측 네브 배경 같이 당장 눈에 보이는 것들은 다 바꾼 상태이다. <br>
+다만 예전부터 눈에 밟혔던 파비콘을 바꿔보려고 한다.
+</div>
+
+<br>
+<br>
+
+### **1. 일단 파비콘으로 사용할, 1:1 비율의 사진을 정한다.**
+
+![](20230317_favicon/favicon.png){: .normal}
+
+<div style='font-size: 0.95rem; color: #777; align:center'>
+좋아하는 색으로 1:1 사이즈의 원을 하나 만들어보았다.
+</div> 
+
+<br>
+
+<br>
+
+### **2. 아래 사이트로 들어간다.**
+[https://www.favicon-generator.org/](https://www.favicon-generator.org/)
+
+
+<br>
+
+### **3. 파일 선택 > Create Favicon 버튼을 클릭한다.**
+
+![](20230317_favicon/1.png)
+
+<span style='font-size: 0.8rem; color: #777;'>
+개인적으로 Include your favicon.ico in the public gallery.를 체크 해제했다. <br> 
+잘은 모르지만 public gallery라고 하는 어딘가에 내 파비콘이 저장될 것 같은 느낌이라..
+</span> 
+
+<br>
+
+
+### **4. Download the generated favicon을 눌러 내려 받는다.**
+
+![](20230317_favicon/2.png)
+
+
+### **5. 내려 받은 압축파일을 풀고, 각자의 테마에 favicon의 경로에 넣어서 사용한다.** 
+
+<br>
+
+
+<span style='font-size: 0.95rem; color: #999;'>
+[+] <br>
+현재 사용하는 지킬 테마에는 assets폴더 > img폴더 > favicons 폴더에 있다.<br>
+favicons에서는 favicon.ico, favicon-16x16.png, favicon-32x32.png 이렇게 세 가지 파일에서<br> 
+파비콘을 사용하고 있으므로 해당 파일을 교체해 주었다.<br>
+파비콘이 변경되었다!😊
+</span> 
+
+
+
+
