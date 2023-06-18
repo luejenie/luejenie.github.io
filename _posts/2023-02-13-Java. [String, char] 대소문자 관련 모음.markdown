@@ -22,7 +22,7 @@ pin: true
 
 > [대소문자 확인]
 \
-> **char** | Character.isUpperCase(*c*), Character.isLoserCase(*c*)
+> **char** | Character.isUpperCase(*c*), Character.isLowerCase(*c*)
 
 > [알파벳, 숫자 여부 확인]
 \
