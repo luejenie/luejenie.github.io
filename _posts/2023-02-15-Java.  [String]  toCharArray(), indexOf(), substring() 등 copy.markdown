@@ -2,7 +2,7 @@
 layout: post
 title: Java. [String] 문자 추출, 문자열 자르기 (indexOf(), substring()) 등 
 date: 2023-02-15 15:57:00 +0900
-categories: [코딩테스트, 간단이론(Java)]
+categories: [공부, Java]
 tags: [Java, 간단이론, 코딩테스트]
 pin: true
 ---
