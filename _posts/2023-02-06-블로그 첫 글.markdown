@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  블로그 첫 글
+title:  블로그 미리보기 (Gitbash 이용)
 date: 2023-02-06 18:40:00 +0900
 categories: [Blogging, myblog]
 ---
+
+블로그 첫 글이다.<br>
+첫 글인 만큼 블로그 쓸 때 필요한 내용을 정리해놓자!
 
 ### 마크다운 언어 정리
 테마 원작자가 친절하게 정리해주심.

@@ -1,0 +1,54 @@
+---
+layout: post
+title: Github. Git bash 이용해서 commit, push하기
+date: 2023-03-18 15:33:00 +0900
+categories: [공부, Github]
+tags: [깃허브 블로그(Github Blog), Github, Git Bash]
+pin: true
+---
+
+**[Github] Git bash 이용해서 commit, push하기**
+
+<div style='font-size: 0.8rem; color: #777;'>
+깃허브 블로그를 쓸 때는 보통 미리보기 서버를 켜놓고 작성한다. <br>
+평소 깃허브 데스크탑을 이용했기 때문에 블로그 글 역시 깃허브 데스크탑을 사용했었다.<br>
+그런데 생각해보니 git bash로 미리보기를 켜고 끄기 때문에 <br>
+여기서 바로 push, commit까지 하는 게 훨씬 효율적일 것 같아서 따로 정리해본다!<br>
+</div>
+
+<br>
+<br>
+
+```
+  git status
+  git add .
+  git commit -m "커밋메시지"
+  git push -u origin main
+```
+
+
+### 0. Git bash 열자.
+
+### **1. 작업 폴더로 이동하기**
+* 내 경우에는 Java 폴더에 블로그 이름(luejenie.github.io)으로 따로 폴더를 만들어놨다. 
+* cd c/Java/luejenie.github.io
+
+
+### **2. git status**로 현재 상태, 즉 변경사항 확인하기
+* git status를 치면 modified라고 뜨면서 변경한 사항을 보여준다.
+
+### **3. git add .** : 변경사항 넣어주기
+
+### **4. git commit -m "커밋메시지"** : 커밋메시지와 함께 커밋하기
+
+### **5. git push -u origin main** : main branch에 push 하기
+
+<br>
+
+<br>
+
+
+
+
+
+
